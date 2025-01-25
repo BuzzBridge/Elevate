@@ -1,0 +1,89 @@
+.courses-section {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .courses-section h1 {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+  .courses-scroll-container {
+    overflow-x: auto;
+    padding-bottom: 20px; 
+  }
+  
+  .courses-list {
+    display: flex;
+    gap: 16px; 
+    padding: 10px;
+  }
+  
+  .course-card {
+    flex: 0 0 auto;
+    width: 200px; 
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-card img {
+    display: block;
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+  }
+  
+
+  .courses-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .courses-scroll-container {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+  }
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .course-card {
+      width: 150px; /* Smaller cards for mobile */
+    }
+  
+    .courses-list {
+      gap: 12px; /* Reduce gap further for mobile */
+    }
+  }
+  
+  /* Responsive adjustments for laptops and larger screens */
+  @media (min-width: 769px) {
+    .courses-scroll-container {
+      overflow-x: hidden; /* Disable horizontal scroll on larger screens */
+    }
+  
+    .courses-list {
+      justify-content: center; /* Center the cards */
+      flex-wrap: wrap; /* Allow cards to wrap to the next line */
+      gap: 24px; /* Increase gap between cards */
+    }
+  
+    .course-card {
+      width: 300px; /* Larger cards for laptops */
+    }
+  }

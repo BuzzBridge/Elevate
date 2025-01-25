@@ -1,0 +1,26 @@
+/* Add these styles for the course detail page */
+.course-detail {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .course-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .course-detail img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .course-detail p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
