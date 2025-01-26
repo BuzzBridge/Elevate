@@ -1,0 +1,29 @@
+
+.hero-section {
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.hero-section-web {
+    display: block;
+}
+
+.hero-section-mobile {
+    display: none;
+}
+
+video.hero-video {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-section-web {
+        display: none;
+    }
+
+    .hero-section-mobile {
+        display: block;
+    }
+}
