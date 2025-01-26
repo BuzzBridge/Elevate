@@ -1,8 +1,6 @@
 import React from 'react';
 import CourseCard from './CourseCard';
 import './Courses.css';
-
-// Import images from the assets folder
 import course1 from './assets/FilmMaking.png';
 import course2 from './assets/GraphicDesign.png';
 import course3 from './assets/MusicImage.png';
