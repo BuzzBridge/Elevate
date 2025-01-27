@@ -5,6 +5,7 @@ import Hero from './components/hero/Hero';
 import Courses from './components/Courses/Courses';
 import CourseDetail from './components/Courses/CourseDetail';
 import Instructors from './components/Instructors/Instructors';
+import AboutUsSection from './components/aboutUs/aboutUs';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
               <Navbar />
               <Hero />
               <Courses />
+              <AboutUsSection />
             </div>
           } />
           <Route path="/course/:id" element={<CourseDetail />} />
