@@ -6,25 +6,32 @@ import Courses from './components/Courses/Courses';
 import CourseDetail from './components/Courses/CourseDetail';
 import Instructors from './components/Instructors/Instructors';
 import AboutUsSection from './components/aboutUs/aboutUs';
+import SocialDetails from './components/socialDetails/SocialDetails';
+import InstagramHandle from './components/instagramHandle/InstagramHandle';
 import './App.css';
+
+function Home() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Courses />
+      <AboutUsSection />
+      <Instructors />
+      <InstagramHandle />
+      <SocialDetails />
+    </>
+  );
+}
+
 
 function App() {
   return (
     <Router basename="/Elevate">
       <div className="App">
         <Routes>
-          <Route path="/" element={
-            <div>
-              <Navbar />
-              <Hero />
-              <Courses />
-              <AboutUsSection />
-            </div>
-          } />
+          <Route path="/" element={<Home />} />
           <Route path="/course/:id" element={<CourseDetail />} />
-        </Routes>
-        <Routes>
-          <Route path='/' element={<Instructors/>} />
         </Routes>
       </div>
     </Router>

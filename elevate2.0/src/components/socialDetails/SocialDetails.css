@@ -1,0 +1,47 @@
+.social-details-div {
+    background-color: black;
+    color: white;
+    height: 100%;
+    padding-bottom: 5vh;
+}
+
+.social-details-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    font-size: 50px;
+    height: fit-content;
+    padding: 15px 30px 15px 30px;
+    margin-bottom: 0;
+}
+
+.social-details-mobile {
+    padding-top: 3.5vh;
+}
+
+.social-details-mobile .social-links {
+    margin-top: 10vh;
+}
+
+.social-details-mobile .social-icon {
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+
+.social-details-div a {
+    color: inherit; /* Use the same color as the surrounding text */
+    text-decoration: none; /* Remove the underline */
+}
+
+
+@media (max-width: 768px) {
+
+    .social-details-title  {
+        font-size: 30px;
+        padding: 10px 20px 10px 20px;
+    }
+
+}
