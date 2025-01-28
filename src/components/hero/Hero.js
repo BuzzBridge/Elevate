@@ -17,6 +17,9 @@ const Hero = () => {
                     <source src={mobileVideo} type="video/mp4" />
                 </video>
             </div>
+            <button className='enroll-button'>
+                <strong>Enroll Now</strong>
+            </button>
         </div>
     );
 };
