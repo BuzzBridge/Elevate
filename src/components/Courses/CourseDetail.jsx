@@ -16,11 +16,12 @@ const CourseDetail = () => {
     imageLink.push(require(`./assets/images/` + imageName));
   });
   const backgroundImage = require('./assets/images/' + course.backgroundImage);
-  console.log(backgroundImage);
+  const courseDetailHeaderImage = require(`./assets/images/`+course.courseDetailHeader);
 
   return (
     <div className="course-detail" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <h1>{course.title}</h1>
+      <img src={courseDetailHeaderImage} alt={`${course.courseDetailHeader}`} className="course-detail-main" />
       {imageLink.map((image, index) => (
         <img
           key={index} // Use index as the key (or a unique identifier if available)

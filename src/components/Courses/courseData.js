@@ -12,6 +12,7 @@ export const courses = [
             'Film 5.png',
             'Film 6.png'
         ],
+        courseDetailHeader: 'Film Making Title.png',
         mainImage: 'FilmMaking.png',
         details: 'This course covers the basics of React, including components, state, and props.',
     },
@@ -24,6 +25,7 @@ export const courses = [
             'Graphic 1.png',
             'Graphic 2.png'
         ],
+        courseDetailHeader: 'Graphic Title.png',
         mainImage: 'GraphicDesign.png',
         details: 'This course dives into advanced topics like hooks, context, and performance optimization.',
     },
@@ -37,6 +39,7 @@ export const courses = [
             'Music 2.png',
             'Music 3.png',
         ],
+        courseDetailHeader: 'Music Title.png',
         mainImage: 'MusicImage.png',
         details: 'This course teaches state management using Redux and the Context API.',
     },
