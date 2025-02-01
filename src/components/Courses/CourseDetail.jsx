@@ -20,7 +20,6 @@ const CourseDetail = () => {
 
   return (
     <div className="course-detail" style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <h1>{course.title}</h1>
       <img src={courseDetailHeaderImage} alt={`${course.courseDetailHeader}`} className="course-detail-main" />
       {imageLink.map((image, index) => (
         <img
@@ -30,8 +29,6 @@ const CourseDetail = () => {
           className="course-image"
         />
       ))}
-      <p>{course.description}</p>
-      <p>{course.details}</p>
     </div>
   );
 };

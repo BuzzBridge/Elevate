@@ -19,7 +19,7 @@ function Home() {
       <Courses />
       <AboutUsSection />
       <Instructors />
-      <InstagramHandle />
+      {/* <InstagramHandle /> */}
       <SocialDetails />
       <Footer />
     </>

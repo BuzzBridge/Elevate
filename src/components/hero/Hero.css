@@ -55,8 +55,8 @@ video.hero-video {
     }
 
     .hero-section .enroll-button {
-        font-size: 30px;
-        bottom: 20vh;
+        font-size: 25px;
+        bottom: 10vh;
         left: 50%;
         /* This positions the left edge of the button at the 50% mark  */
         transform: translateX(-50%);
