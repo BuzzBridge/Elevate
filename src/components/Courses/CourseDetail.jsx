@@ -1,45 +1,34 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import './Courses.css';
+import './CourseDetail.css';
+import { courses } from './courseData';
 
 const CourseDetail = () => {
   const { id } = useParams(); // Get the course ID from the URL
 
-  // Example course data (replace with actual data fetching logic)
-  const courses = [
-    {
-      id: 1,
-      title: 'Film Making',
-      description: 'Learn the fundamentals of React.',
-      image: 'https://via.placeholder.com/150',
-      details: 'This course covers the basics of React, including components, state, and props.',
-    },
-    {
-      id: 2,
-      title: 'Graphic Design',
-      description: 'Master advanced React concepts.',
-      image: 'https://via.placeholder.com/150',
-      details: 'This course dives into advanced topics like hooks, context, and performance optimization.',
-    },
-    {
-      id: 3,
-      title: 'Music Production',
-      description: 'Learn Redux and Context API.',
-      image: 'https://via.placeholder.com/150',
-      details: 'This course teaches state management using Redux and the Context API.',
-    },
-  ];
-
   const course = courses.find((course) => course.id === parseInt(id));
-
   if (!course) {
     return <div>Course not found!</div>;
   }
 
+  const imageLink = [];
+  course.courseDetailImages.forEach((imageName) => {
+    imageLink.push(require(`./assets/images/` + imageName));
+  });
+  const backgroundImage = require('./assets/images/' + course.backgroundImage);
+  console.log(backgroundImage);
+
   return (
-    <div className="course-detail">
+    <div className="course-detail" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <h1>{course.title}</h1>
-      <img src={course.image} alt={course.title} />
+      {imageLink.map((image, index) => (
+        <img
+          key={index} // Use index as the key (or a unique identifier if available)
+          src={image}
+          alt={`${course.title} - ${index + 1}`}
+          className="course-image"
+        />
+      ))}
       <p>{course.description}</p>
       <p>{course.details}</p>
     </div>

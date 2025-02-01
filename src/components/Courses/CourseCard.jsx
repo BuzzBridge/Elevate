@@ -5,13 +5,15 @@ import './Courses.css';
 const CourseCard = ({ course }) => {
   const navigate = useNavigate();
 
+  const imageLink = require(`./assets/images/`+course.mainImage)
+
   const handleClick = () => {
     navigate(`/course/${course.id}`); 
   };
 
   return (
     <div className="course-card" onClick={handleClick}>
-      <img src={course.image} alt={`Course ${course.id}`} />
+      <img src={imageLink} alt={`Course ${course.id}`} />
     </div>
   );
 };
