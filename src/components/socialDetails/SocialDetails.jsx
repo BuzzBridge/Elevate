@@ -11,7 +11,7 @@ const SocialDetails = () => {
     const instaProfile = "https://www.instagram.com/elevatecreativeacademy";
 
     return (
-        <div className='social-details-div'>
+        <div className='social-details-div' id='contact'>
             <h1 className='social-details-title'>Let's connect</h1>
             <div className='social-details-mobile' >
                 <div>

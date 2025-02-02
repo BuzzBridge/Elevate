@@ -17,9 +17,13 @@ const Hero = () => {
                     <source src={mobileVideo} type="video/mp4" />
                 </video>
             </div>
-            <button className='enroll-button'>
-                <strong>Enroll Now</strong>
-            </button>
+            <button 
+    className='enroll-button' 
+    onClick={() => window.open("https://form.jotform.com/250181201079447", "_blank")}
+>
+    <strong>Enroll Now</strong>
+</button>
+
         </div>
     );
 };

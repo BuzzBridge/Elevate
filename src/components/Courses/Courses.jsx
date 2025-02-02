@@ -6,7 +6,7 @@ import { courses } from './courseData';
 
 const Courses = () => {
   return (
-    <div className="courses-section">
+    <div className="courses-section" id='courses'>
       <h1>Our Courses</h1>
       <div className="courses-scroll-container">
         <div className="courses-list">

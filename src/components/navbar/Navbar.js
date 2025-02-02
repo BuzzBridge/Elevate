@@ -9,6 +9,14 @@ const Navbar = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+            setMenuOpen(false); // Close the menu on mobile after clicking
+        }
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar-left">
@@ -24,13 +32,13 @@ const Navbar = () => {
                 {/* <ul className="nav-links" > */}
                 <ul className={`nav-links ${menuOpen ? "show" : ""}`} >
                     <li>
-                        <button onClick={() => console.log("products")}>Products</button>
+                    <button onClick={() => scrollToSection("courses")}>Courses</button>
                     </li>
                     <li>
-                        <button onClick={() => console.log("aboutUs")}>About Us</button>
+                    <button onClick={() => scrollToSection("aboutUs")}>About Us</button>
                     </li>
                     <li>
-                        <button onClick={() => console.log("contact")}>Contact</button>
+                        <button onClick={() => scrollToSection("contact")}>Contact</button>
                     </li>
                 </ul>
                 {/* Hamburger button for smaller screens */}
