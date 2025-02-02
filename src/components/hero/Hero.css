@@ -65,9 +65,7 @@ video.hero-video {
 }
 
 @supports (-webkit-touch-callout: none) {
-    /* Fix for iOS Safari */
-    .hero-video {
-        height: calc(var(--vh, 1vh) * 100);
+    .hero-section {
+        height: -webkit-fill-available;  /* Adjust for iOS dynamic height */
     }
 }
-
