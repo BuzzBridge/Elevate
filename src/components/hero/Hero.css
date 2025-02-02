@@ -16,6 +16,7 @@
 
 video.hero-video {
     width: 100%;
+    object-fit: cover;
 }
 
 .hero-section .enroll-button {
@@ -64,8 +65,9 @@ video.hero-video {
     }
 }
 
+/* Fix for iOS Safari viewport height issues */
 @supports (-webkit-touch-callout: none) {
     .hero-section {
-        height: -webkit-fill-available;  /* Adjust for iOS dynamic height */
+        height: 100dvh; /* Use dynamic viewport height */
     }
 }

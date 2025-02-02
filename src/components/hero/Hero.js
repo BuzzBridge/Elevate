@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './Hero.css';
 
 const Hero = () => {
     const mobileVideo = require(`./assets/videos/heroMobileBackground.mp4`)
     const webVideo = require(`./assets/videos/heroWebBackground.mp4`)
+
+    useEffect(() => {
+        const fixViewportHeight = () => {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty("--vh", `${vh}px`);
+        };
+
+        fixViewportHeight();
+        window.addEventListener("resize", fixViewportHeight);
+
+        return () => window.removeEventListener("resize", fixViewportHeight);
+    }, []);
 
     return (
         <div className='hero-section'>
