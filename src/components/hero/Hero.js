@@ -20,9 +20,16 @@ const Hero = () => {
     return (
         <div className='hero-section'>
             <div className='hero-section-web' >
-                <video className="hero-video hero-video-large" autoPlay loop muted>
-                    <source src={webVideo} type="video/mp4" />
-                </video>
+            <video 
+    className="hero-video" 
+    autoPlay 
+    loop 
+    muted 
+    playsInline /* Prevents iOS fullscreen mode */
+>
+    <source src={require(`./assets/videos/heroWebBackground.mp4`)} type="video/mp4" />
+</video>
+
             </div>
             <div className='hero-section-mobile'>
                 <video className="hero-video hero-video-small" autoPlay loop muted>
