@@ -41,7 +41,7 @@
     display: block;
     width: 100%; 
     height: auto; 
-    border-radius: 10px;
+    /* border-radius: 10px; */
   }
   
 
@@ -63,7 +63,7 @@
   /* Responsive adjustments for mobile */
   @media (max-width: 768px) {
     .course-card {
-      width: 150px; /* Smaller cards for mobile */
+      width: 200px; /* Smaller cards for mobile */
     }
   
     .courses-list {
