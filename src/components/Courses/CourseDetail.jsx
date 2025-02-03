@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import './CourseDetail.css';
 import { courses } from './courseData';
 
+
 const CourseDetail = () => {
   const { id } = useParams(); // Get the course ID from the URL
 

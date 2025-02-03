@@ -1,9 +1,11 @@
+
+
 export const courses = [
     {
         id: 1,
         title: 'Film Making',
         description: 'Learn the fundamentals of React.',
-        backgroundImage: 'Film BG.png',
+        backgroundImage: 'FilmBG.png',
         courseDetailImages: [
             'Film 1.png',
             'Film 2.png',
@@ -20,7 +22,7 @@ export const courses = [
         id: 2,
         title: 'Graphic Design',
         description: 'Master advanced React concepts.',
-        backgroundImage: 'Film BG.png',
+        backgroundImage: 'GraphicBG.png',
         courseDetailImages: [
             'Graphic 1.png',
             'Graphic 2.png'
@@ -33,7 +35,7 @@ export const courses = [
         id: 3,
         title: 'Music Production',
         description: 'Learn Redux and Context API.',
-        backgroundImage: 'Film BG.png',
+        backgroundImage: 'MusicBG.png',
         courseDetailImages: [
             'Music 1.png',
             'Music 2.png',
