@@ -19,6 +19,10 @@ video.hero-video {
     object-fit: cover;
 }
 
+img.hero-video {
+    width: 100%;
+}
+
 .hero-section .enroll-button {
     /* If you want position of button to be relative to another parent element.
     Mark this element as absolute and parent element as relative */
