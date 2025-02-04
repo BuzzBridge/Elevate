@@ -30,6 +30,13 @@ const CourseDetail = () => {
           className="course-image"
         />
       ))}
+        <button 
+    className='enroll-button' 
+    onClick={() => window.open("https://form.jotform.com/250181201079447", "_blank")}
+>
+    <strong>Enroll Now</strong>
+</button>
+
     </div>
   );
 };
