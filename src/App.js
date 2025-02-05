@@ -7,7 +7,6 @@ import CourseDetail from './components/Courses/CourseDetail';
 import Instructors from './components/Instructors/Instructors';
 import AboutUsSection from './components/aboutUs/aboutUs';
 import SocialDetails from './components/socialDetails/SocialDetails';
-import InstagramHandle from './components/instagramHandle/InstagramHandle';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -29,7 +28,7 @@ function Home() {
 
 function App() {
   return (
-    <Router basename="/Elevate">
+    <Router basename="/">
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
