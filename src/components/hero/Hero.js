@@ -1,22 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './Hero.css';
 
 const Hero = () => {
-    // const mobileVideo = require(`./assets/videos/heroMobileBackground.mp4`);
     const mobileGif = require(`./assets/gif/heroMobileBackground.gif`);
     const webVideo = require(`./assets/videos/heroWebBackground.mp4`);
-
-    useEffect(() => {
-        const fixViewportHeight = () => {
-            const vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty("--vh", `${vh}px`);
-        };
-
-        fixViewportHeight();
-        window.addEventListener("resize", fixViewportHeight);
-
-        return () => window.removeEventListener("resize", fixViewportHeight);
-    }, []);
 
     return (
         <div className='hero-section'>
@@ -35,12 +22,9 @@ const Hero = () => {
             <div className='hero-section-mobile'>
                 <img
                     className="hero-video hero-video-small"
-                    src={mobileGif} // Replace `mobileVideo` with the path to your GIF
+                    src={mobileGif}
                     alt="Hero GIF"
                 />
-                {/* <video className="hero-video hero-video-small" autoPlay loop muted>
-                    <source src={mobileVideo} type="video/mp4" />
-                </video> */}
             </div>
             <button
                 className='enroll-button'
