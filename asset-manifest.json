@@ -1,24 +1,38 @@
 {
   "files": {
     "main.css": "/static/css/main.bfe74ec8.css",
-    "main.js": "/static/js/main.44b20c4e.js",
-    "static/js/488.5e2acda7.chunk.js": "/static/js/488.5e2acda7.chunk.js",
+    "main.js": "/static/js/main.06937393.js",
+    "static/js/488.3f4d8785.chunk.js": "/static/js/488.3f4d8785.chunk.js",
     "static/media/heroMobileBackground.gif": "/static/media/heroMobileBackground.513fb587f70e557eb001.gif",
     "static/media/heroWebBackground.mp4": "/static/media/heroWebBackground.89d14ec6654270003b24.mp4",
     "static/media/MusicImage.png": "/static/media/MusicImage.4da479b9792415acb055.png",
     "static/media/FilmMaking.png": "/static/media/FilmMaking.f8d5476b0579bef6a66b.png",
     "static/media/GraphicDesign.png": "/static/media/GraphicDesign.b449cc0b7068ccd944fa.png",
     "static/media/FilmBG.png": "/static/media/FilmBG.bb1851c828da54ebf8fb.png",
+    "static/media/FilmBGFinal.png": "/static/media/FilmBGFinal.bb1851c828da54ebf8fb.png",
     "static/media/MusicBG.png": "/static/media/MusicBG.2f037a4895917baffe4a.png",
+    "static/media/MusicBGFinal.png": "/static/media/MusicBGFinal.2f037a4895917baffe4a.png",
     "static/media/GraphicBG.png": "/static/media/GraphicBG.247da179521f74be3db0.png",
+    "static/media/GraphicBGFinal.png": "/static/media/GraphicBGFinal.247da179521f74be3db0.png",
     "static/media/Sid3.png": "/static/media/Sid3.a928a0c678885e4bc51e.png",
     "static/media/Mohit4.png": "/static/media/Mohit4.55a57a67fd53b5cfca41.png",
     "static/media/Dev2.png": "/static/media/Dev2.32c6b2dee2ca88f58013.png",
     "static/media/Siddhanth1.png": "/static/media/Siddhanth1.a3052dc497af2176e18a.png",
+    "static/media/Film6New.png": "/static/media/Film6New.4200087cc167a3e8b12c.png",
+    "static/media/Film4New.png": "/static/media/Film4New.ce0a13451883092979f6.png",
+    "static/media/Graphic1New.png": "/static/media/Graphic1New.f47089e3a01718ba64cc.png",
+    "static/media/Film3New.png": "/static/media/Film3New.7805c5f865f85b81a991.png",
+    "static/media/Music3New.png": "/static/media/Music3New.d0c9462cec2c1003ecd6.png",
+    "static/media/Film5New.png": "/static/media/Film5New.c2271c97368b8e7c88d1.png",
+    "static/media/Music1New.png": "/static/media/Music1New.dde9068aadd749f8382d.png",
+    "static/media/Film1New.png": "/static/media/Film1New.2c4902d1f4f822a32ac5.png",
+    "static/media/Music2New.png": "/static/media/Music2New.219f2a5bca4e756fe03e.png",
     "static/media/DevProfile.png": "/static/media/DevProfile.0e0db9a30fb27bd581f0.png",
     "static/media/SiddharthProfile.png": "/static/media/SiddharthProfile.695dc9248910f8eaffef.png",
     "static/media/MohitProfile.png": "/static/media/MohitProfile.30e3ebac9c6b45cbb54e.png",
+    "static/media/Film2New.png": "/static/media/Film2New.958565d3e024903daaed.png",
     "static/media/Graphic 2.png": "/static/media/Graphic 2.c53e731588281c9cfb15.png",
+    "static/media/Graphic2New.png": "/static/media/Graphic2New.c53e731588281c9cfb15.png",
     "static/media/SiddhantProfile.png": "/static/media/SiddhantProfile.5ca7dbb1a7c250aac5ec.png",
     "static/media/Film 4.png": "/static/media/Film 4.a80ba3f7bb7387387ab2.png",
     "static/media/Film 6.png": "/static/media/Film 6.e92856ed8374b7d276e4.png",
@@ -35,11 +49,11 @@
     "static/media/Graphic Title.png": "/static/media/Graphic Title.606aebec94e23dfbe0e6.png",
     "index.html": "/index.html",
     "main.bfe74ec8.css.map": "/static/css/main.bfe74ec8.css.map",
-    "main.44b20c4e.js.map": "/static/js/main.44b20c4e.js.map",
-    "488.5e2acda7.chunk.js.map": "/static/js/488.5e2acda7.chunk.js.map"
+    "main.06937393.js.map": "/static/js/main.06937393.js.map",
+    "488.3f4d8785.chunk.js.map": "/static/js/488.3f4d8785.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfe74ec8.css",
-    "static/js/main.44b20c4e.js"
+    "static/js/main.06937393.js"
   ]
 }
