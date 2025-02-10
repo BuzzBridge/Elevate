@@ -17,25 +17,27 @@ const CourseDetail = () => {
     imageLink.push(require(`./assets/images/` + imageName));
   });
   const backgroundImage = require('./assets/images/' + course.backgroundImage);
-  const courseDetailHeaderImage = require(`./assets/images/`+course.courseDetailHeader);
+  const courseDetailHeaderImage = require(`./assets/images/` + course.courseDetailHeader);
 
   return (
     <div className="course-detail" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <img src={courseDetailHeaderImage} alt={`${course.courseDetailHeader}`} className="course-detail-main" />
       {imageLink.map((image, index) => (
-        <img
-          key={index} // Use index as the key (or a unique identifier if available)
-          src={image}
-          alt={`${course.title} - ${index + 1}`}
-          className="course-image"
-        />
+        <div>
+          <img
+            key={index} // Use index as the key (or a unique identifier if available)
+            src={image}
+            alt={`${course.title} - ${index + 1}`}
+            className="course-image"
+          />
+          <button
+            className='enroll-button'
+            onClick={() => window.open("https://form.jotform.com/250181201079447", "_blank")}
+          >
+            <strong>Enroll Now</strong>
+          </button>
+        </div>
       ))}
-        <button 
-    className='enroll-button' 
-    onClick={() => window.open("https://form.jotform.com/250181201079447", "_blank")}
->
-    <strong>Enroll Now</strong>
-</button>
 
     </div>
   );
