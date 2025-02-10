@@ -23,7 +23,7 @@ const CourseDetail = () => {
     <div className="course-detail" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <img src={courseDetailHeaderImage} alt={`${course.courseDetailHeader}`} className="course-detail-main" />
       {imageLink.map((image, index) => (
-        <div>
+        <div className='course-detail-card-container'>
           <img
             key={index} // Use index as the key (or a unique identifier if available)
             src={image}
