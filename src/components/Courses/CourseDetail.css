@@ -16,7 +16,6 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .course-detail p {
@@ -29,18 +28,24 @@
   width: 90%;
 }
 
-/* .course-detail-card-container {
-  position: absolute;
-} */
+.course-detail-card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
 
 .course-detail-card-container .enroll-button {
-  /* position: relative; */
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
   padding: 10px 20px;
-  font-size: 40px;
+  font-size: 24px;
   color: white;
   background-color: transparent;
-  border: 4px solid white;
+  border: 2px solid white;
   cursor: pointer;
   transition: background-color 1s ease, color 1s ease;
 }
