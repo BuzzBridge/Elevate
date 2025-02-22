@@ -21,8 +21,8 @@
   }
   
   .instructor-card {
-    width: 100%; /* Full width on mobile */
-    max-width: 300px; /* Limit width on larger screens */
+    width: 100%; /* Full width mobile */
+    max-width: 500px; /* Limit width on larger screens */
     height: 200px; /* Fixed height */
     border-radius: 10px;
     overflow: hidden;
